@@ -1,0 +1,221 @@
+{
+ "locations_clean": 8000,
+ "locations_file": 8160,
+ "defects_injected": 1224,
+ "rows_with_defect": 1224,
+ "clean_rows_flagged": 8,
+ "clean_rows_flagged_share": 0.0012,
+ "detection": [
+  {
+   "defect": "missing_coords",
+   "injected": 160,
+   "detected": 160,
+   "recall": 1.0,
+   "rule_flags": 160,
+   "precision": 1.0
+  },
+  {
+   "defect": "swapped_latlon",
+   "injected": 80,
+   "detected": 80,
+   "recall": 1.0,
+   "rule_flags": 80,
+   "precision": 1.0
+  },
+  {
+   "defect": "wrong_postcode_far",
+   "injected": 160,
+   "detected": 158,
+   "recall": 0.988,
+   "rule_flags": 158,
+   "precision": 1.0
+  },
+  {
+   "defect": "invalid_postcode",
+   "injected": 80,
+   "detected": 80,
+   "recall": 1.0,
+   "rule_flags": 80,
+   "precision": 1.0
+  },
+  {
+   "defect": "tiv_x1000",
+   "injected": 48,
+   "detected": 48,
+   "recall": 1.0,
+   "rule_flags": 48,
+   "precision": 1.0
+  },
+  {
+   "defect": "tiv_div1000",
+   "injected": 32,
+   "detected": 32,
+   "recall": 1.0,
+   "rule_flags": 32,
+   "precision": 1.0
+  },
+  {
+   "defect": "tiv_nonpositive",
+   "injected": 40,
+   "detected": 40,
+   "recall": 1.0,
+   "rule_flags": 40,
+   "precision": 1.0
+  },
+  {
+   "defect": "duplicate",
+   "injected": 160,
+   "detected": 159,
+   "recall": 0.994,
+   "rule_flags": 159,
+   "precision": 1.0
+  },
+  {
+   "defect": "year_invalid",
+   "injected": 80,
+   "detected": 80,
+   "recall": 1.0,
+   "rule_flags": 80,
+   "precision": 1.0
+  },
+  {
+   "defect": "storeys_invalid",
+   "injected": 64,
+   "detected": 64,
+   "recall": 1.0,
+   "rule_flags": 64,
+   "precision": 1.0
+  },
+  {
+   "defect": "code_unknown",
+   "injected": 120,
+   "detected": 120,
+   "recall": 1.0,
+   "rule_flags": 120,
+   "precision": 1.0
+  },
+  {
+   "defect": "currency_wrong",
+   "injected": 40,
+   "detected": 40,
+   "recall": 1.0,
+   "rule_flags": 40,
+   "precision": 1.0
+  },
+  {
+   "defect": "tiv_sum_mismatch",
+   "injected": 80,
+   "detected": 80,
+   "recall": 1.0,
+   "rule_flags": 80,
+   "precision": 1.0
+  },
+  {
+   "defect": "encoding",
+   "injected": 80,
+   "detected": 80,
+   "recall": 1.0,
+   "rule_flags": 86,
+   "precision": 0.93
+  }
+ ],
+ "overall_recall": 0.998,
+ "overall_precision": 0.995,
+ "exposure": {
+  "total_tiv_clean_eur_bn": 30.67,
+  "total_tiv_raw_eur_bn": 207.234,
+  "total_tiv_after_repair_and_removal_eur_bn": 28.823,
+  "raw_over_clean": 6.757,
+  "after_over_clean": 0.9398,
+  "rows_removed": 637,
+  "rows_removed_share": 0.0781,
+  "largest_half_degree_cell_share_tiv": {
+   "clean": 0.0267,
+   "raw": 0.098,
+   "after": 0.0274
+  },
+  "largest_cell_tiv_eur_bn": {
+   "clean": 0.819,
+   "raw": 20.213,
+   "after": 0.79
+  }
+ },
+ "missed": [
+  {
+   "defect": "missing_coords",
+   "missed": 0
+  },
+  {
+   "defect": "swapped_latlon",
+   "missed": 0
+  },
+  {
+   "defect": "wrong_postcode_far",
+   "missed": 2
+  },
+  {
+   "defect": "invalid_postcode",
+   "missed": 0
+  },
+  {
+   "defect": "tiv_x1000",
+   "missed": 0
+  },
+  {
+   "defect": "tiv_div1000",
+   "missed": 0
+  },
+  {
+   "defect": "tiv_nonpositive",
+   "missed": 0
+  },
+  {
+   "defect": "duplicate",
+   "missed": 1
+  },
+  {
+   "defect": "year_invalid",
+   "missed": 0
+  },
+  {
+   "defect": "storeys_invalid",
+   "missed": 0
+  },
+  {
+   "defect": "code_unknown",
+   "missed": 0
+  },
+  {
+   "defect": "currency_wrong",
+   "missed": 0
+  },
+  {
+   "defect": "tiv_sum_mismatch",
+   "missed": 0
+  },
+  {
+   "defect": "encoding",
+   "missed": 0
+  }
+ ],
+ "not_covered_by_rules": [
+  {
+   "defect": "tiv_x3",
+   "injected": 160,
+   "detected": 160,
+   "recall": 1.0
+  },
+  {
+   "defect": "coords_shift_15km",
+   "injected": 160,
+   "detected": 0,
+   "recall": 0.0
+  },
+  {
+   "defect": "code_swapped",
+   "injected": 160,
+   "detected": 0,
+   "recall": 0.0
+  }
+ ]
+}
